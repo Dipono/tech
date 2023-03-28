@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- <link rel="stylesheet" href="signup.component.css"> -->
+   </head>
+<body>
+  <app-dashboard></app-dashboard>
+  <div class="wrapper">
+    <h2>Registration</h2>
+    <form action="#" #f="ngForm">
+      <div class="input-box">
+        <label class="">Staff ID</label>
+        <input class="form-control"  #username="ngModel"
+        type="text"
+        minlength="9"
+        name="username"
+        [(ngModel)]="regform.username"
+        required>
+        <div class="alert alert-danger" *ngIf="username.invalid && (username.dirty || username.touched)">
+       <div *ngIf="username.errors?.['required']">Staff ID required</div>
+       <div *ngIf="username.errors?.['minlength']">Invalid Length</div>
+        </div>
+      </div><!--The end-->
+      <br>
+      <div class="input-box">
+        <label class="">First Names</label>
+        <input class="form-control"  #firstnames="ngModel"
+        type="text"
+        minlength="5"
+        name="firstnames"
+        [(ngModel)]="regform.firstnames"
+        required>
+        <div class="alert alert-danger" *ngIf="firstnames.invalid && (firstnames.dirty || firstnames.touched)">
+       <div *ngIf="firstnames.errors?.['required']">Staff Names required</div>
+       <div *ngIf="firstnames.errors?.['minlength']">Invalid names length</div>
+        </div>
+      </div><!--The end-->
+      <br>
+
+      <div class="input-box">
+        <label class="">Surname</label>
+        <input class="form-control"  #surname="ngModel"
+        type="text"
+        minlength="5"
+        name="surname"
+        [(ngModel)]="regform.surname"
+        required>
+        <div class="alert alert-danger" *ngIf="surname.invalid && (surname.dirty ||surname.touched)">
+       <div *ngIf="firstnames.errors?.['required']">Staff surname required</div>
+       <div *ngIf="firstnames.errors?.['minlength']">Invalid surname length</div>
+        </div>
+      </div><!--The end-->
+      <br>
+      <div class="input-box">
+        <label class="">Email</label>
+        <input class="form-control"  #Email="ngModel"
+        type="text"
+        minlength="5"
+        name="Email"
+        [(ngModel)]="regform.email"
+        required>
+        <div class="alert alert-danger" *ngIf="Email.invalid && (Email.dirty ||Email.touched)">
+       <div *ngIf="firstnames.errors?.['required']">Staff email required</div>
+       <div *ngIf="firstnames.errors?.['minlength']">Invalid email length</div>
+        </div>
+      </div><!--The end-->
+      <br>
+
+      <div class="input-box">
+         <label class="">Role</label>
+        <input class="form-control"  #role="ngModel"
+        type="text"
+        minlength="5"
+        name="Role"
+        [(ngModel)]="regform.role"
+        required>
+        <div class="alert alert-danger" *ngIf="role.invalid && (role.dirty ||role.touched)">
+       <div *ngIf="firstnames.errors?.['required']">Staff role required</div>
+       <div *ngIf="firstnames.errors?.['minlength']">Invalid role length</div>
+        </div>
+      </div> <!--=The end-->      
+      <br>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I accept all terms & condition</h3>
+      </div>
+      <div class="input-box button">
+  
+       
+        <input routerLink="" [disabled]="!f.valid" type="Submit" class="btn btn-login float-right" value="Register Now">
+      </div>
+      <div class="text">
+       <!----<h3>Already have an account? <a href="#">Login now</a></h3>-->
+            <h3>Technical Services</h3>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+</head>
+ <body>
+      <app-dashboard></app-dashboard>
+            <div class="page">
+              <nav class="navbar narbar-light">
+                <div class="container-fluid">
+                    <h1 class="nav-header" style="color: whitesmoke; margin-left: 270px;">Artisan Members</h1>
+                    <input class="form-control" style="margin-left: 70%;" type="text"
+                    name="name" [(ngModel)]="name" (ngModelChange)="SearchArtisan()"
+                    placeholder="search by name">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </div>
+              </nav>
+              <!-- <div class="row"> -->
+              <!-- <app-nav></app-nav> -->
+              <div class="list">
+                <div class="col-xl- mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="https://i.pinimg.com/originals/30/78/87/3078878c28223316693ecbed8b03bcb9.jpg"
+                            alt=""
+                            style="width: 45px; height: 45px"
+                            class="rounded-circle"
+                          />
+                          <div class="ms-3">
+                            <p class="fw-bold mb-1">Thabo Rampora</p>
+                            <p class="text-muted mb-0">chrisrampora242@gmail.com</p>
+                            <p class="text-muted mb-0">013 665 1245</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer border-0 bg-light p-2 d-flex justify-content-around">
+                      <a
+                        class="btn btn-link m-0 text-reset"
+                        href="#"
+                        role="button"
+                        data-ripple-color="primary"
+                        >Delete<i class="fas fa-envelope ms-2"></i
+                      ></a>
+                      <a
+                        class="btn btn-link m-0 text-reset"
+                        href="#"
+                        role="button"
+                        data-ripple-color="primary"
+                        >Edit<i class="fas fa-phone ms-2"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl- mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="https://th.bing.com/th/id/OIP.3zht-3oE_BClDwKSbDH4ZwHaHa?pid=ImgDet&w=900&h=900&rs=1"
+                            alt=""
+                            style="width: 45px; height: 45px"
+                            class="rounded-circle"
+                          />
+                          <div class="ms-3">
+                            <p class="fw-bold mb-1">Zama Buthelezi</p>
+                            <p class="text-muted mb-0">zamaButhelezi@gmail.com</p>
+                            <p class="text-muted mb-0">013 665 1234</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer border-0 bg-light p-2 d-flex justify-content-around">
+                      <a
+                        class="btn btn-link m-0 text-reset"
+                        href="#"
+                        role="button"
+                        data-ripple-color="primary"
+                        >Delete<i class="fas fa-envelope ms-2"></i
+                      ></a>
+                      <a
+                        class="btn btn-link m-0 text-reset"
+                        href="#"
+                        role="button"
+                        data-ripple-color="primary"
+                        >Edit<i class="fas fa-phone ms-2"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl- mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="https://th.bing.com/th/id/OIP.Yn3nHngWyRyColVPWS7vSwHaHa?pid=ImgDet&w=148&h=148&c=7"
+                            alt=""
+                            style="width: 45px; height: 45px"
+                            class="rounded-circle"
+                          />
+                          <div class="ms-3">
+                            <p class="fw-bold mb-1">Banele Mpofu</p>
+                            <p class="text-muted mb-0">banele@gmail.com</p>
+                            <p class="text-muted mb-0">013 665 1234</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer border-0 bg-light p-2 d-flex justify-content-around">
+                      <a
+                        class="btn btn-link m-0 text-reset"
+                        href="#"
+                        role="button"
+                        data-ripple-color="primary"
+                        >Delete<i class="fas fa-envelope ms-2"></i
+                      ></a>
+                      <a
+                        class="btn btn-link m-0 text-reset"
+                        href="#"
+                        role="button"
+                        data-ripple-color="primary"
+                        >Edit<i class="fas fa-phone ms-2"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl- mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="https://th.bing.com/th/id/R.db144b4c00b946694d62ed2e050804d9?rik=hkC0CKWLNasi0A&riu=http%3a%2f%2f3.bp.blogspot.com%2f-AMcAwqFbRlI%2fUim03JRfJFI%2fAAAAAAACAUA%2fpOMC_yPa43g%2fs1600%2f3.jpg&ehk=%2bIDWkhf8qoT%2fX7Q%2bNWBJLyiS18HLc9gMDSKMUn6wgWc%3d&risl=&pid=ImgRaw&r=0"
+                            alt=""
+                            style="width: 45px; height: 45px"
+                            class="rounded-circle"
+                          />
+                          <div class="ms-3">
+                            <p class="fw-bold mb-1">Thandi Masanabo</p>
+                            <p class="text-muted mb-0">thandi@gmail.com</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="card-footer border-0 bg-light p-2 d-flex justify-content-around"
+                    >
+                      <a
+                        class="btn btn-link m-0 text-reset"
+                        href="#"
+                        role="button"
+                        data-ripple-color="primary"
+                        >Delete<i class="fas fa-envelope ms-2"></i
+                      ></a>
+                      <a
+                        class="btn btn-link m-0 text-reset"
+                        href="#"
+                        role="button"
+                        data-ripple-color="primary"
+                        >Edit<i class="fas fa-phone ms-2"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+ </body>
+</html>
+
+
+<!-- </div> -->
+
+<!-- <nav class="navbar narbar-light bg-primary">
+        <div class="container-fluid">
+            <h1 class="nav-header" style="color: whitesmoke;">Artisan Members</h1>
+            <input class="form-control" style="margin-left: 70%;" type="text"
+            name="name" [(ngModel)]="name" (ngModelChange)="SearchArtisan()"
+            placeholder="search by name">
+            <i class="fa-regular fa-magnifying-glass"></i>
+        </div>
+    </nav>
+  <div class="container mob-table ">
+    <app-nav></app-nav> -->
+    <!-- <div class="d-flex" style="margin-top: 1%;">
+      <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Add Artisan</button>
+    </div> -->
+<!-- <div class="table bg-primary">
+  <table class="table mt-4">
+    <thead>
+        <tr style="color: whitesmoke;">
+          <th scope="col">Number</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Mobile</th>
+          <th scope="col">Actions</th>
+        </tr>
+    </thead>
+
+    <tbody style="color: antiquewhite;">
+      <tr *ngFor="let artisan of artisan">
+          <td>{{artisan.number}}</td>
+          <td>{{artisan.name}}</td>
+          <td>{{artisan.email}}</td>
+          <td>{{artisan.mobile}}</td>
+          <td>
+              <button class="btn btn-danger" (click)="deleteArtisanRow(artisan.number)">DELETE</button>
+              &nbsp;&nbsp;
+              <button class="btn btn-info" (click)="updateArtisan(artisan.number)">EDIT</button>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div> -->
+
+<!-- Modal -->
+<!-- <form class="add-staff" #f="ngForm">
+  <div class="form">
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Artisan Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="form-group">
+                <label class="">Name and Surname</label>
+                <input class="form-control"  #artisanName="ngModel"
+                type="text"
+                minlength="10"
+                name="artisanName"
+                [(ngModel)]="rForm.artisanName"
+                placeholder="Banele Mpofu"
+                required>
+                <div class="alert alert-danger" *ngIf="artisanName.invalid && (artisanName.dirty || artisanName.touched)">
+                  <div *ngIf="artisanName.errors?.['required']">Name required</div>
+                  <div *ngIf="artisanName.errors?.['minlength']">Invalid minLength</div>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                <label class="">email</label>
+                <input class="form-control"  #emailAddr="ngModel"
+                type="text"
+                minlength="5"
+                name="emailAddr"
+                [(ngModel)]="rForm.emailAddr"
+                placeholder="banele@gmail.com"
+                required>
+                <div class="alert alert-danger" *ngIf="emailAddr.invalid && (emailAddr.dirty || emailAddr.touched)">
+                  <div *ngIf="emailAddr.errors?.['required']">Name required</div>
+                  <div *ngIf="emailAddr.errors?.['minlength']">Invalid minLength</div>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                <label class="">Mobile</label>
+                <input class="form-control"  #phoneNumber="ngModel"
+                type="text"
+                minlength="5"
+                name="phoneNumber"
+                [(ngModel)]="rForm.phoneNum"
+                placeholder="01236650001"
+                required>
+                <div class="alert alert-danger" *ngIf="phoneNumber.invalid && (phoneNumber.dirty || phoneNumber.touched)">
+                  <div *ngIf="phoneNumber.errors?.['required']">Name required</div>
+                  <div *ngIf="phoneNumber.errors?.['minlength']">Invalid minLength</div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" (click)="submitArtisanData(f)"  class="btn btn-login float-right btn-success">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form> -->
+
+
+
+

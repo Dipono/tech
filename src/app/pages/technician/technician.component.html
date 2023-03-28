@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Aritisan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="./technician.component.html" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="" alt="">
+        <span class="d-none d-lg-block">Artisan Dashboard</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+   
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/technician">
+          <i class="bi bi-grid"></i>
+          <span>Requests</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+    
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/status">
+            
+          <i class="bi bi-grid-fill"></i>
+          <span>Job Status</span>
+        </a>
+      </li><!-- End Job Card Nav -->
+
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/artfeedback">  
+          <i class="bi bi-grid-fill"></i>
+          <span>Feedback</span>
+        </a>
+      </li><!-- End Job Card Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/artreport">
+            
+          <i class="bi bi-grid-fill"></i>
+          <span>Report</span>
+        </a>
+      </li><!-- End Job Card Nav -->
+      
+
+
+      
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/login">
+            <i class="bi bi-grid"></i>
+            <span>Log Out</span>
+          </a>
+    </ul>
+  </aside><!-- End Sidebar-->
+  <main id="main" class="main">
+    <div class="pagetitle">  
+    </div><!-- End Page Title -->
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Job Card Request</h5>
+
+              <!-- General Form Elements -->
+              <!-- <form>
+                <div class="row mb-3">
+                  <label for="inputText" class="col-sm-2 col-form-label">Staff Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="validationCustom01" value=" Miss Ariel" required>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputEmail" class="col-sm-2 col-form-label">Office</label> 
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="validationCustom02" value="45 Bulding A" required>
+                  </div>
+                </div>
+				
+                <div class="row mb-3">
+                    <label for="inputEmail" class="col-sm-2 col-form-label">Category</label> 
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="validationCustom02" value="Technical" required>
+                    </div>
+                  </div>
+                  
+               
+                <div class="row mb-3">
+                  <label for="inputDate" class="col-sm-2 col-form-label">Request Date</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="validationCustom02" value="2022/10/24" required>
+                  </div>
+                </div>
+
+				  <div class="row mb-3">
+					<label for="inputNumber" class="col-sm-2 col-form-label">Upload Picture</label>
+					<div class="col-sm-10">
+					    <img src="../../../assets/Air.jfif" alt="">
+					</div>
+				  </div>
+          <div class="col-sm-10">
+            <p class="card-text"><a href="artfeedback" class="btn btn-primary">Response</a></p>
+             
+          </div>
+
+
+              </form> -->
+              <!-- **************************************************************************************** -->
+              <div class="container mt-5">
+                <!-- SHOW MESSAGE -->
+                <div *ngIf = "successmsg" class="alert alert-success alert-dismissible fade show" role="alert">
+                  <strong>{{successmsg}}</strong>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                <table class="table table-bordered">
+                  <thead>
+                    <th scope="col"></th>
+                    <th scope="col">Venue</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Staff Name</th>
+                    <th scope="col">Request Date</th>
+                    <th scope="col">Job Status</th>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor = 'let req of readData; let i=index'>
+                      <td scope="col">{{i+1}}</td>
+                      <td scope="col">{{req.vanue}}</td>
+                      <td scope="col">{{req.description}}</td>
+                      <td scope="col">{{req.category}}</td>
+                      <td scope="col">{{req.firstname}} {{req.lastname}}</td>
+                      <td scope="col">{{req.to_be_fix}}</td>
+                      <td>
+                        <select>
+                          <option *ngFor="let prog of statusProgress" selected="pending" value="prog.progress">
+                            {{prog.progress}}
+                          </option>
+                        </select>
+                        <!-- <button class="btn btn-sm btn-primary txt-white"><a href="status">Update</a></button> -->
+                        <!-- &nbsp;
+                        <a  [routerLink]="['/create', us.jobcard_id]"  class="btn btn-sm btn-success">Update</a> -->
+                      </td>
+                  </tbody>
+                </table> 
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
