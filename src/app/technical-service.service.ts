@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class TechnicalServiceService {
-
+ 
   constructor(private _http:HttpClient) { }
   url = 'http://localhost:3000/'
 
